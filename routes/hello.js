@@ -9,8 +9,18 @@ const fakeData = require('../data.json')
 router.get("/", async (req, res) => {
   // console.log('info')
   try {
-    // let url = 'https://www.youtube.com/shorts/J16oF508C_4'
+    let url = 'https://www.youtube.com/shorts/J16oF508C_4'
     // let metaData = await ytdl.getBasicInfo(url)
+
+    // Local download video
+    // await new Promise((resolve) => { // wait
+    //   ytdl(url)
+    //   .pipe(fs.createWriteStream('video.mp4'))
+    //   .on('close', () => {
+    //     resolve(); // finish
+    //   })
+    // })
+
     let v_formats = []
     fakeData.forEach(format => {
       let data = {
