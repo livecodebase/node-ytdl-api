@@ -1,8 +1,8 @@
 const express = require("express");
 const app = express();
 
-const helloRoute = require("./hello.js");
+const helloRoute = require("./yt.js");
 
-app.use("/hello", helloRoute);
+app.use("/yt", helloRoute);
 
 module.exports = app;
